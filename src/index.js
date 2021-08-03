@@ -6,13 +6,11 @@ fetch("http://localhost:3000/images")
   .then((res) => res.json())
   .then((images) => {
     console.log("Inside GET Fetch: ", images);
-for (let i = 0; i < images.length; i++) {
-    const imageData = images[i]
-    console.log("Inside ImageData: ", imageData)
-}
+
     renderCardImage(images)
   });
-  console.log("images: ", images)
+
+console.log("images: ", images)
 const containerEl = document.querySelector(".image-container")
 
 function renderCardImage (datas) {
