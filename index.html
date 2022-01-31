@@ -14,7 +14,7 @@
     <section class="image-container">
       <!-- This is the form for challenge 1, uncomment only after you finished the main task -->
 
-      <form class="comment-form image-card">
+      <form class="post-form comment-form image-card">
         <h2 class="title">New Post</h2>
         <input
           class="comment-input"
@@ -33,6 +33,16 @@
         <button class="comment-button" type="submit">Post</button>
       </form>
 
+      <form class="second-form comment-form">
+        <input
+          class="comment-input"
+          type="text"
+          name="comment"
+          placeholder="Add a comment..."
+        />
+        <button class="comment-button" type="submit">Post</button>
+      </form>
+
       <!-- This is the Post card. Ust the following HTML as reference to build your cards using JS -->
 
       <!-- <article class="image-card">
@@ -47,7 +57,7 @@
           <li>And replace them with the real ones</li>
           <li>From the server</li>
         </ul>
-        <form class="comment-form">
+        <form class="second-form">
           <input
             class="comment-input"
             type="text"
@@ -60,3 +70,45 @@
     </section>
   </body>
 </html>
+
+<!-- [
+{
+id: 1,
+content: "What a cute dog!",
+imageId: 1
+},
+{
+id: 2,
+content: "He has the paws for this!",
+imageId: 2
+},
+{
+id: 3,
+content: "Someone's in trouble!",
+imageId: 2
+},
+{
+imageId: 1,
+content: "Funny dog!!",
+id: 4
+},
+{
+imageId: 1,
+content: "Hes a good boy!!",
+id: 5
+}
+] -->
+
+<!-- // const handleDelete = (id) => {
+  //   console.log({ handleDelete: id });
+  
+  //   fetch(`${process.env.REACT_APP_FETCH_URL}/taxis/${id}`, {
+  //     method: "DELETE",
+  //   })
+  //     .then((res) => res.json())
+  //     .then(() => {
+  //       const updatedTaxis = taxis.filter((taxi) => taxi.id !== id);
+  //       setTaxis(updatedTaxis);
+  //     });
+  
+  // onClick={() => handleDelete(id)} -->
